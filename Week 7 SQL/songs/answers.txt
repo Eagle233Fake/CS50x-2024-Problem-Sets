@@ -1,0 +1,2 @@
+1. Using the 5 values of danceability, energy, loudness, balence, tempo to calculate average numbers and take them into a formula that designed by census.
+2. Maybe introduce the relationship between the linsters that has the similar favoritism towards a particular type of music to calculating this aura would work better.
