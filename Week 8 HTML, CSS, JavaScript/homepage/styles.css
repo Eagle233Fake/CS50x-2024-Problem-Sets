@@ -1,0 +1,33 @@
+h1
+{
+    text-align: center;
+    background-color: #6d88dc;
+    color: #000000;
+    font-size: 200%;
+    border: dotted;
+}
+
+h5
+{
+    text-align: center;
+    background-color: #c2cbf0;
+    color: grey;
+}
+
+h4
+{
+    text-align: center;
+    background-color: grey;
+    color: white;
+}
+
+h2
+{
+    text-align: center;
+}
+
+#btn1
+{
+    display: block;
+    margin: 0 auto;
+}
