@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="get">
+        <table>
+            <tr>
+                <td>Symbol</td>
+                <td>Shares</td>
+                <td>Price</td>
+                <td>Total</td>
+            </tr>
+            {% for table in tables %}
+            <tr>
+                <td>{{ table["symbol"] }}</td>
+                <td>{{ table["shares"] }}</td>
+                <td>{{ table["price"] | usd }}</td>
+                <td>{{ table["total"] | usd }}</td>
+            </tr>
+            {% endfor %}
+            <tr>
+                <td></td>
+                <td></td>
+                <td>Cash</td>
+                <td>{{ cash[0]['cash'] | usd }}</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>TOTAL</td>
+                <td>{{ total | usd }}</td>
+            </tr>
+        </table>
+    </form>
+{% endblock %}
